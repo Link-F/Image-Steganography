@@ -18,7 +18,7 @@
 <strong>
 <p>This tool is developed with Visual Studio 2015</p>
 <p>Clone the repository and open the existing project with Visual Studio.
-You can compile and run it inside Visual Studio or create a executable withto use it independently from it</p>
+You can compile and run it inside Visual Studio or create an executable to use it independently</p>
 </strong>
 
 
