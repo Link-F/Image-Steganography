@@ -1,4 +1,4 @@
-# Picture-Steganography
+# Image-Steganography
 Hide a string inside the bit-planes of an image.
 
 <h1>Functionalities</h1>
