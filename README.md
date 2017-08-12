@@ -32,7 +32,7 @@ You can compile and run it inside Visual Studio or create an executable to use i
 
 ![alt text](https://github.com/Link-F/Picture-Steganography/blob/master/img/2.PNG)
 
-<h2>Put a String into a bit-planes of an image</h2>
+<h2>Put a String into a bit-plane of an image</h2>
 
 <h3>1. Type a string into the string field and specify the font-size and Position</h3> 
 <h4>The position is measured in pixel</h4>  
