@@ -8,13 +8,22 @@ Hide a string inside the bit-planes of an image.
 <li>Label an image with a unique string to mark the origin.</li>
 <li>Add additional attributes inside the image independent from metadata.</li>
 </ul>
-<p>The string is embedded inside the bit-planes of an image. The lower the bit plane, the less loss of quality and visibility. 
+<p>The string is embedded inside the bit-planes of an image. The lower the bit plane, the less loss of quality and visibility.
 
 <h1>Functionalities</h1>
 <ul>
   <li>Show the bit-planes of an image</li>
   <li>Put a string in one of the eight bit-planes of an image</li>
 </ul>
+
+
+<h1>Install and run</h1>
+
+<p>This tool is developed with Visual Studio 2015</p>
+<p>Clone the repository and open the existing project with Visual Studio.
+You can compile and run it inside Visual Studio or create a executable withto use it independently from it</p>
+
+
 
 <h1>Usage</h1>
 <h2>Show the bit-planes of an image</h2>
