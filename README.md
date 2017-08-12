@@ -12,6 +12,7 @@
   <li>Show the bit-planes of an image</li>
   <li>Put a string in one of the eight bit-planes of an image</li>
 </ul>
+<hr>
 
 <h1>Install and run</h1>
 <strong>
@@ -19,8 +20,7 @@
 <p>Clone the repository and open the existing project with Visual Studio.
 You can compile and run it inside Visual Studio or create an executable to use it independently</p>
 </strong>
-
-<br/>
+<hr>
 
 <h1>Usage</h1>
 <h2>Show the bit-planes of an image</h2>
@@ -31,8 +31,9 @@ You can compile and run it inside Visual Studio or create an executable to use i
 <h3>2. Press the bit-plane Button above the image field</h3>
 
 ![alt text](https://github.com/Link-F/Picture-Steganography/blob/master/img/2.PNG)
+<hr>
 
- <br/>
+<br/>
 
 <h2>Put a String into a bit-plane of an image</h2>
 
