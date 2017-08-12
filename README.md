@@ -1,4 +1,4 @@
-<h1>Background</h1>
+<h1>About</h1>
 <p>With this tool images can be marked with a string. This can be useful in various applications.</p>
 <p>For example:</p>
 <ul>
