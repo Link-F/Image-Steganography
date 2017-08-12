@@ -1,6 +1,3 @@
-# Image-Steganography
-Hide a string inside the bit-planes of an image.
-
 <h1>Background</h1>
 <p>With this tool images can be marked with a string. This can be useful in various applications.</p>
 <p>For example:</p>
@@ -18,11 +15,11 @@ Hide a string inside the bit-planes of an image.
 
 
 <h1>Install and run</h1>
-
+<code>
 <p>This tool is developed with Visual Studio 2015</p>
 <p>Clone the repository and open the existing project with Visual Studio.
 You can compile and run it inside Visual Studio or create a executable withto use it independently from it</p>
-
+</code>
 
 
 <h1>Usage</h1>
