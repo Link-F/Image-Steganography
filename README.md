@@ -2,13 +2,13 @@
 Hide a string inside the bit-planes of an image.
 
 <h1>Background</h1>
-<p>With this tool images can be marked with a string. This can be useful in many applications.</p>
+<p>With this tool images can be marked with a string. This can be useful in various applications.</p>
 <p>For example:</p>
 <ul>
 <li>Label an image with a unique string to mark the origin.</li>
 <li>Add additional attributes inside the image independent from metadata.</li>
 </ul>
-<p>When the string is embedded in the low-order bit layers, the quality loss of the image is minimal.</p>
+<p>The string is embedded inside the bit-planes of an image. The lower the bit plane, the less loss of quality and visibility. 
 
 <h1>Functionalities</h1>
 <ul>
@@ -16,6 +16,7 @@ Hide a string inside the bit-planes of an image.
   <li>Put a string in one of the eight bit-planes of an image</li>
 </ul>
 
+<h1>Usage</h1>
 <h2>Show the bit-planes of an image</h2>
 <h3>1. First load an image into the program by pressing the empty image field</h3>
 
