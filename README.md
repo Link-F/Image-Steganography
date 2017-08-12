@@ -1,11 +1,11 @@
 # Image-Steganography
 Hide a string inside the bit-planes of an image.
 
-<h1>Background<h1>
+<h1>Background</h1>
 <p>With this tool images can be marked with a string. This can be useful in many applications.</p>
 <p>For example:</p>
 <ul>
-<li>Label an image with a unique string to mark the origin.<li>
+<li>Label an image with a unique string to mark the origin.</li>
 <li>Add additional attributes inside the image independent from metadata.</li>
 </ul>
 <p>When the string is embedded in the low-order bit layers, the quality loss of the image is minimal.</p>
