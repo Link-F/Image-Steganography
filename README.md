@@ -22,6 +22,7 @@ You can compile and run it inside Visual Studio or create an executable to use i
 </strong>
 
 
+
 <h1>Usage</h1>
 <h2>Show the bit-planes of an image</h2>
 <h3>1. First load an image into the program by pressing the empty image field</h3>
@@ -31,6 +32,8 @@ You can compile and run it inside Visual Studio or create an executable to use i
 <h3>2. Press the bit-plane Button above the image field</h3>
 
 ![alt text](https://github.com/Link-F/Picture-Steganography/blob/master/img/2.PNG)
+
+
 
 <h2>Put a String into a bit-plane of an image</h2>
 
