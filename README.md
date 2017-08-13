@@ -42,7 +42,7 @@ You can compile and run it inside Visual Studio or create an executable to use i
 
 ![alt text](https://github.com/Link-F/Picture-Steganography/blob/master/img/3.PNG)
 
-<h3>2. Choose the bit-plane where you want to hide the string and press the "Einbinden" button</h3>
+<h3>2. Choose the bit-plane where you want to hide the string and press the button</h3>
 <h4>The edited image is loaded in the second image field<h4>
 <h4>Press the bit-plane button above the edited image to see the result</h4>
 <h4>With the save button the edited picture can be saved</h4>
