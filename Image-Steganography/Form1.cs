@@ -82,7 +82,6 @@ namespace Projekt
             byte[] pic = new byte[pictureBox1.Image.Width * pictureBox1.Image.Height * 3];
             int i = 0;
 
-
             // Speichern der RGB Werte aller Pixel des Bildes
             for (int x = 0; x < pictureBox1.Image.Width; x++)
             {
@@ -108,7 +107,6 @@ namespace Projekt
                         R = (byte)((pic[i]) & (int)Math.Pow(2, picture)); // Bitebenenbilder herausrechnen
                         G = (byte)((pic[i + 1]) & (int)Math.Pow(2, picture)); // Bitebenenbilder herausrechnen
                         B = (byte)((pic[i + 2]) & (int)Math.Pow(2, picture)); // Bitebenenbilder herausrechnen
-
 
                         // Die Farbwerte in das Array schreiben erst Rot Grün Blau index 3 und so weiter
                         bitebenen_bilder[picture].SetPixel(x, y, Color.FromArgb(R, G, B));
@@ -279,16 +277,16 @@ namespace Projekt
             int i = 0;
 
 
-        // Speichern der RGB Werte aller Pixel des Bildes
-        for (int x = 0; x < pictureBox1.Image.Width; x++)
-        {
-            for (int y = 0; y < pictureBox1.Image.Height; y++)
+            // Speichern der RGB Werte aller Pixel des Bildes
+            for (int x = 0; x < pictureBox1.Image.Width; x++)
             {
-                pic[i++] = ((Bitmap)pictureBox1.Image).GetPixel(x, y).R;
-                pic[i++] = ((Bitmap)pictureBox1.Image).GetPixel(x, y).G;
-                pic[i++] = ((Bitmap)pictureBox1.Image).GetPixel(x, y).B;
+                for (int y = 0; y < pictureBox1.Image.Height; y++)
+                {
+                    pic[i++] = ((Bitmap)pictureBox1.Image).GetPixel(x, y).R;
+                    pic[i++] = ((Bitmap)pictureBox1.Image).GetPixel(x, y).G;
+                    pic[i++] = ((Bitmap)pictureBox1.Image).GetPixel(x, y).B;
+                }
             }
-        }
 
             int temp = 7;
             // Erstellen der 8 Bitebenen Bilder
@@ -296,70 +294,70 @@ namespace Projekt
             {
                 i = 0;
                 int R, G, B;
-        for (int x = 0; x < pictureBox1.Image.Width; x++)
-        {
-            for (int y = 0; y < pictureBox1.Image.Height; y++)
-            {
+                for (int x = 0; x < pictureBox1.Image.Width; x++)
+                {
+                    for (int y = 0; y < pictureBox1.Image.Height; y++)
+                    {
 
-                R = (byte)((pic[i]) & (int)Math.Pow(2, picture)); // Bitebenenbilder herausrechnen
-                G = (byte)((pic[i + 1]) & (int)Math.Pow(2, picture)); // Bitebenenbilder herausrechnen
-                B = (byte)((pic[i + 2]) & (int)Math.Pow(2, picture)); // Bitebenenbilder herausrechnen
+                        R = (byte)((pic[i]) & (int)Math.Pow(2, picture)); // Bitebenenbilder herausrechnen
+                        G = (byte)((pic[i + 1]) & (int)Math.Pow(2, picture)); // Bitebenenbilder herausrechnen
+                        B = (byte)((pic[i + 2]) & (int)Math.Pow(2, picture)); // Bitebenenbilder herausrechnen
 
                         // Helligkeit der Bitebenenbilder nachträglich erhöhen
                         if (picture == 6)
-                            {
-                                R = R << 1;
-                                G = G << 1;
-                                B = B << 1;
-                            }
+                        {
+                            R = R << 1;
+                            G = G << 1;
+                            B = B << 1;
+                        }
 
-                            if (picture == 5)
-                            {
-                                R = R << 2;
-                                G = G << 2;
-                                B = B << 2;
-                            }
+                        if (picture == 5)
+                        {
+                            R = R << 2;
+                            G = G << 2;
+                            B = B << 2;
+                        }
 
-                            if (picture == 4)
-                            {
-                                R = R << 3;
-                                G = G << 3;
-                                B = B << 3;
-                            }
+                        if (picture == 4)
+                        {
+                            R = R << 3;
+                            G = G << 3;
+                            B = B << 3;
+                        }
 
-                            if (picture == 3)
-                            {
-                                R = R << 4;
-                                G = G << 4;
-                                B = B << 4;
-                            }
+                        if (picture == 3)
+                        {
+                            R = R << 4;
+                            G = G << 4;
+                            B = B << 4;
+                        }
 
-                            if (picture == 2)
-                            {
-                                R = R << 5;
-                                G = G << 5;
-                                B = B << 5;
-                            }
+                        if (picture == 2)
+                        {
+                            R = R << 5;
+                            G = G << 5;
+                            B = B << 5;
+                        }
 
-                            if (picture == 1)
-                            {
-                                R = R << 6;
-                                G = G << 6;
-                                B = B << 6;
-                            }
+                        if (picture == 1)
+                        {
+                            R = R << 6;
+                            G = G << 6;
+                            B = B << 6;
+                        }
 
-                            if (picture == 0)
-                            {
-                                R = R << 7;
-                                G = G << 7;
-                                B = B << 7;
-                            }
+                        if (picture == 0)
+                        {
+                            R = R << 7;
+                            G = G << 7;
+                            B = B << 7;
+                        }
 
-                // Die Farbwerte in das Array schreiben erst Rot Grün Blau index 3 und so weiter
-                bitebenen_bilder[picture].SetPixel(x, y, Color.FromArgb(R, G, B));
-                i = i + 3;
-            }
-        }
+                        // Die Farbwerte in das Array schreiben erst Rot Grün Blau index 3 und so weiter
+                        bitebenen_bilder[picture].SetPixel(x, y, Color.FromArgb(R, G, B));
+                        i = i + 3;
+                    }
+                }
                 temp--;
             }
 
