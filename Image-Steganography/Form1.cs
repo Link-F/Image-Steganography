@@ -103,7 +103,6 @@ namespace Projekt
                 {
                     for (int y = 0; y < pictureBox1.Image.Height; y++)
                     {
-
                         R = (byte)((pic[i]) & (int)Math.Pow(2, picture)); // Bitebenenbilder herausrechnen
                         G = (byte)((pic[i + 1]) & (int)Math.Pow(2, picture)); // Bitebenenbilder herausrechnen
                         B = (byte)((pic[i + 2]) & (int)Math.Pow(2, picture)); // Bitebenenbilder herausrechnen
@@ -199,9 +198,7 @@ namespace Projekt
                         if (blue > 255)
                             blue = 255;
 
-
                         prep_pic.SetPixel(x, y, Color.FromArgb(red ,green, blue));
-
                     }
                 }
             }
